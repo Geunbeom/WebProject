@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <!-- 네임스페이스에 DAO 풀패키지명을 작성 -->
+<mapper namespace="com.ssafy.board.model.dao.BoardDao">
+	<resultMap type="Board" id="boardMap">
+		<result column="id" property="id"/>
+		<result column="writer" property="writer"/>
+		<result column="title" property="title"/>
+		<result column="content" property="content"/>
+		<result column="view_cnt" property="viewCnt"/>
+		<result column="reg_date" property="regDate"/>
+	</resultMap>
+	<!-- 메서드 명을 넣는다. resultType 은 클래스 원래는 풀패키지명 but alias 를 등록하여 Board 만 입력 -->
+	<!-- 컬럼명을 바꿔주기 위해 resultType -> resultMap 으로 매핑한다. -->
+	
+	<!-- 전체 게시글 조회 -->
+	<select id="selectAll" resultMap="boardMap">
+		SELECT id, content, writer, title, view_cnt, date_format(reg_date, '%y-%m-%d') AS reg_date FROM board;
+	</select>
+	
+	<!-- 상세 게시글 조회 -->
+	<select id="selectOne" resultMap="boardMap" parameterType="int">
+		SELECT * FROM board
+		WHERE id = #{id};
+	</select>
+	
+	<!-- 타입이 두개 이상일 경우 Map 또는 DTO 로 넘김 -->
+	<insert id="insertBoard" parameterType="Board">
+		INSERT INTO board (title, writer, content)
+		<!-- getter 를 이용하여 property 명으로 넣어줌. -->
+		VALUES (#{title}, #{writer}, #{content});
+	</insert>
+	
+	<!-- 게시글 삭제 -->
+	<delete id="deleteBoard" parameterType="int">
+		DELETE FROM board
+		WHERE id = #{id};
+	</delete>
+	
+	<!-- 조회수 증가 -->
+	<update id="updateViewCnt" parameterType="int">
+		UPDATE board
+		SET view_cnt = view_cnt+1
+		WHERE id = #{id};
+	</update>
+	
+	<!-- 게시글 수정 -->
+	<!-- 만약 날짜가 수정 날짜라면 같이 수정해줘야한다. -->
+	<update id="updateBoard" parameterType="Board">
+		UPDATE board
+		SET title = #{title}, content = #{content}, reg_date = now()
+		WHERE id = #{id};
+	</update>
+	
+</mapper>
