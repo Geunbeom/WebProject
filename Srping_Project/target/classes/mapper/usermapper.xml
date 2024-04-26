@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <!-- 네임스페이스에 DAO 풀패키지명을 작성 -->
+<mapper namespace="com.ssafy.project.model.dao.UserDao">
+	<insert id="regist" parameterType="User">
+		INSERT INTO users
+		VALUES(#{id}, #{password}, #{name}, #{email}, #{age})
+	</insert>
+	<select id="getUserList" resultType="User">
+		SELECT * FROM users
+	</select>
+	<select id="findUser" resultType="User" parameterType="String">
+		SELECT * FROM users
+		WHERE id = #{id}
+	</select>
+</mapper>

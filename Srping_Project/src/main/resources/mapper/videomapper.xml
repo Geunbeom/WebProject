@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <!-- 네임스페이스에 DAO 풀패키지명을 작성 -->
+<mapper namespace="com.ssafy.project.model.dao.VideoDao">
+	<select id="selectAll" resultType="Video">
+		SELECT *
+		FROM videos
+	</select>
+	
+	<select id="selectOne" parameterType="int" resultType="Video">
+		SELECT *
+		FROM videos
+		WHERE id=#{id};
+	</select>
+	
+	<update id="updateViewCnt" parameterType="int">
+		UPDATE videos
+		SET view_Cnt = view_Cnt+1
+		WHERE id = #{id};
+	</update>
+
+
+</mapper>
