@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.project.model.dao.RoutineBoardReplyDao">
+  <select id="getRoutineBoardReplyList" parameterType="int" resultType="RoutineBoardReply">
+  	SELECT * FROM routineboardreply
+  	WHERE board_id = #{id}
+  	ORDER BY reply_id ASC;
+  </select>
+  <insert id="createRoutineBoardReply" parameterType="RoutineBoardReply">
+  	INSERT INTO routineboardreply (reply_id, board_id, writer, content, reg_date)
+  	VALUES(0, #{boardId}, #{writer}, #{content}, date(now()));
+  </insert>
+  <select id="getRoutineBoardReply" parameterType="int" resultType="RoutineBoardReply">
+  	SELECT * FROM routineboardreply
+  	WHERE reply_id = #{rid};
+  </select>
+  <delete id="deleteRoutineBoardReply" parameterType="int">
+  	DELETE FROM routineboardreply
+  	WHERE reply_id = #{rid};
+  </delete>
+  <update id="putRoutineBoardReply" parameterType="RoutineBoardReply">
+  	UPDATE routineboardreply
+  	SET writer = #{writer}, content = #{content}
+  	WHERE reply_id = #{replyId};
+  </update>
+</mapper>

@@ -1,0 +1,36 @@
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.project.model.dao.LikeBoardDao">
+	<select id="getBoardLike" parameterType="int" resultType="LikeBoard">
+		SELECT *
+		FROM likeBoard
+		WHERE board_id = ${boardId};
+	</select>
+	
+	<select id="getUserLike" parameterType="String" resultType="RoutineBoard">
+		SELECT rb.*
+		FROM routineBoard rb
+		INNER JOIN likeBoard lb
+		ON lb.user_id = #{userId}
+		WHERE lb.board_id = rb.id;
+	</select>
+	
+	<select id="likeCheck" parameterType="LikeBoard" resultType="int">
+		SELECT COUNT(*)
+		FROM likeBoard
+		WHERE board_id = ${boardId} AND user_id = #{userId};
+	</select>
+	
+	<delete id="unLike" parameterType="LikeBoard">
+		DELETE FROM likeBoard
+		WHERE user_id = #{userId} AND board_id = ${boardId};
+	</delete>
+	
+	<insert id="likeBoard" parameterType="LikeBoard">
+		INSERT INTO likeBoard
+		VALUES (0, #{userId}, ${boardId});
+	</insert>
+	
+</mapper>
