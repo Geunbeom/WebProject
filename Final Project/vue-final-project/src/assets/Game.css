@@ -1,0 +1,124 @@
+.outside{
+    display: flex;
+    justify-content: center;
+}
+
+.screen{
+    width: 960px;
+    height: 540px;
+    border: 1px solid rgb(175, 175, 175);
+    align-content: end;
+}
+
+.bt-bar *{
+    margin: 0px 52px 15px;
+    cursor: pointer;
+}
+
+img:hover {
+    background-color: rgba(0, 0, 0, 0.100);
+}
+
+img:active {
+    background-color: rgba(0, 0, 0, 0.250);
+}
+
+.bt-1 img{
+    cursor: pointer;
+    margin: 0px 0px 10px 52px;
+}
+
+.bt-1>*{
+    display: flex;
+}
+
+.bt-1 p{
+    margin: 10px;
+}
+
+.bt-2>div>div{
+    align-content: center;
+}
+
+.bt-2>*{
+    display: flex;
+}
+
+.bt-2 p{
+    margin: 10px;
+}
+
+.bt-1>div>div{
+    align-content: center;
+}
+
+.bt-2 img{
+    margin: 0px 0px 10px 372px;
+    cursor: pointer;
+}
+
+span{
+    margin-left: 10px;
+}
+
+.screen {
+    position: relative;
+}
+
+.info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+}
+
+.man {
+    position: absolute;
+    top: 200px;
+    right: 401px;
+}
+
+.pushup{
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
+
+.click{
+    position: absolute;
+    background-color: rgb(160, 255, 160);
+    border-radius: 100%;
+    border: 0px;
+}
+
+.scoreRank{
+    position: absolute;
+    top: 55px;
+    left: 310px;
+    width: 340px;
+    height: 430px;
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    align-content: center;
+}
+
+.max-exp {
+    background-color: rgb(211, 211, 211);
+    position: relative;
+    width: 350px;
+    z-index: 1;
+}
+
+.curr-exp{
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    width: 0px;
+}
+
+.exp {
+    position: absolute;
+    top: 120px;
+    left: 300px;
+}

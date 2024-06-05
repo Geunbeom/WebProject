@@ -1,0 +1,134 @@
+.detail {
+    cursor: pointer;
+}
+
+.detail:hover {
+    background-color: rgba(0, 0, 0, 0.158);
+}
+
+.detail:active {
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
+.page * {
+    font-size: 17px;
+    color: rgb(117, 117, 117);
+}
+    
+.page{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 5%;
+}
+
+table * {
+    border-bottom: 1px solid rgb(177, 177, 177);
+    text-align: center;
+    height: 30px;
+}
+
+button {
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.bt-regist {
+    height: 30px;
+    margin: auto;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.158);
+    }
+    
+button:active {
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
+.bt-up {
+    border: 1px solid blue;
+    color: blue;
+    border-radius: 3px;
+}
+
+.bt-del {
+    border: 1px solid red;
+    color: red;
+    border-radius: 3px;
+}
+
+.bt-up:hover, .bt-del:hover {
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+.bt-up:active, .bt-del:active {
+    background-color: rgba(0, 0, 0, 0.384);
+}
+
+
+.grass{
+    display: flex;
+}
+
+.routine-body{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    border-radius: 20px;
+    width: 750px;
+    height: 400px;
+    margin: 50px auto 50px;
+}
+.routine-body1{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    padding: 10px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.438);
+    width: auto;
+}
+
+.routine-body1 * {
+    color: white;
+    font-size: 14px;
+}
+
+.routine {
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    margin: 50px 0px 50px 350px;
+}
+
+.routine-muscle {
+    position: absolute;
+    height: 290px;
+    width: 0px;
+    margin: 0px 780px 100px 0px;
+}
+
+.max-exp {
+    background-color: rgb(211, 211, 211);
+    position: relative;
+    width: 350px;
+    z-index: 1;
+}
+
+.curr-exp{
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    width: 0px;
+}

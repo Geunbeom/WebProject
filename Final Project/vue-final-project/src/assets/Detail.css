@@ -1,0 +1,170 @@
+button {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.384);
+    color: rgba(0, 0, 0, 0.671);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {   
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+button:active {   
+    background-color: rgba(0, 0, 0, 0.384);
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    border-top: 1px solid rgba(0, 0, 0, 0.13);
+    padding: 10px 20px;
+    width: 75%;
+    margin: auto;
+}
+
+.detail td {
+    font-size: 18px;
+    margin: auto;
+    color: rgba(0, 0, 0, 0.781);
+}
+
+.content {
+    width: 70%;
+    margin: auto;
+    padding: 50px 70px;
+    word-break: break-all;
+    font-size: 22px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    color: rgba(0, 0, 0, 0.692);
+}
+
+.detail-tool2 {
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    margin: 50px 0px 50px 300px;
+}
+
+.detail-tool1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    border-radius: 20px;
+    width: 750px;
+    margin: 50px auto 0px;
+}
+
+.detail-muscle {
+    position: absolute;
+    height: 290px;
+    width: 0px;
+    margin: 0px 780px 100px 0px;
+}
+
+.update {
+    width: 170px;
+    margin-left: 80%;
+    margin-top: 20px;
+}
+
+.no-update {
+    width: 56px;
+    margin-left: 88%;
+    margin-top: 20px;
+}
+
+.bt-up, .bt-del, .bt-list {
+    margin: 0px 3px;
+    width: 50px;
+    height: 40px;
+}
+
+.bt-up, .re-bt-up {
+    border: 1px solid blue;
+    color: blue;
+}
+
+.bt-list {
+    border: 1px solid black;
+    color: black;
+}
+
+.bt-del, .re-bt-del {
+    border: 1px solid red;
+    color: red;
+}
+
+.reply {
+    width: 85%;
+    margin: auto;
+}
+
+#createForm{
+    margin: 50px auto;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    width: 90%;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+td, th{
+  width: 180px;
+}
+
+.reply-content {
+    width: 90%;
+    margin: 10px;
+    height: 20px;
+    text-align: start;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.233);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+}
+
+#createForm button {
+    width: 50px;
+    height: 30px;
+}
+
+.reply-table {
+    width: 100%;
+    margin-left: 5%;
+}
+
+.reply-detail * {
+    height: 40px;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 5%;
+}
+
+.page * {
+    font-size: 17px;
+    color: rgb(117, 117, 117);
+    margin: 0px 2px;
+}
+
+.re-bt-up, .re-bt-del {
+    width: 40px;
+    height: 25px;
+}
+
+.bold {
+    font-weight: 1000;
+    color: black;
+}
+
+.reply-content:focus{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}

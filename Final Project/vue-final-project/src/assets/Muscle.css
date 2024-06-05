@@ -1,0 +1,98 @@
+.muscle {
+    position: relative;
+}
+
+.muscle1 {
+    position: block;
+    left: 0;
+    width: 400px;
+    z-index: 1;
+    opacity: 1;
+    cursor: auto;
+}
+
+img {
+    position: absolute;
+    left: 0;
+    width: 400px;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+/* 1 사용자지정 */
+
+
+/*2 어깨*/
+.muscle2-1 {
+    clip-path: ellipse(4% 3% at 42% 21%);
+}
+
+.muscle2-2 {
+    clip-path: ellipse(4% 3% at 61% 21%);
+}
+
+/*3 팔*/
+.muscle3-1 {
+    clip-path: ellipse(5% 2% at 36% 23%);
+}
+
+.muscle3-2 {
+    clip-path: ellipse(5% 2% at 67% 23%);
+}
+
+/*4 전완근*/
+.muscle4-1 {
+    clip-path: ellipse(5% 3% at 25% 22%);
+}
+
+.muscle4-2 {
+    clip-path: ellipse(5% 3% at 78% 22%);
+}
+
+/*5 가슴*/
+.muscle5-1 {
+    clip-path: ellipse(4% 3% at 47% 26%);
+}
+
+.muscle5-2 {
+    clip-path: ellipse(4% 3% at 56% 26%);
+}
+
+/*6 등*/
+.muscle6-1 {
+    clip-path: ellipse(2% 4% at 44% 32%);
+}
+
+.muscle6-2 {
+    clip-path: ellipse(2% 4% at 59% 32%);
+}
+
+/*7 복근*/
+.muscle7-1 {
+    clip-path: ellipse(4% 5% at 48% 34%);
+}
+
+.muscle7-2 {
+    clip-path: ellipse(4% 5% at 55% 34%);
+}
+
+/*8 하체*/
+.muscle8-1 {
+    clip-path: ellipse(5% 8% at 46% 55%);
+}
+
+.muscle8-2 {
+    clip-path: ellipse(5% 8% at 57% 55%);
+}
+
+
+
+.muscle-hover {
+    opacity: 0.5;
+}
+
+.muscle-click {
+    opacity: 0.9;
+}

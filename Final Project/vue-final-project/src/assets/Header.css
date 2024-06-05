@@ -1,0 +1,36 @@
+.header{
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    margin-right: 10%;
+}
+
+.header * {
+    margin-left: 10px;
+    line-height: 0px;
+}
+
+button{
+    margin-top: 3px;
+    height: 24px;
+    text-align: center;
+    line-height: 10px;
+}
+
+.head2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.active *{
+    color: rgb(49, 49, 243);
+}
+
+.title {
+    position: absolute;
+    left: 70px;
+    top: 0px;
+    cursor: pointer;
+}

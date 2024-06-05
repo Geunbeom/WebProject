@@ -1,0 +1,35 @@
+h1{
+    margin: 50px 10% 25px;
+}
+
+h2{
+    margin-bottom: 30px;
+}
+
+.container{
+    display: flex;
+    margin: 25px 10% 50px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 25px;
+    width: 150px;
+}
+
+.main{
+    margin-left: 80px;
+}
+
+.menu a.active {
+    color: rgb(100, 100, 248);
+}
+
+button{
+    margin-right: 10px;
+    height: 24px;
+    text-align: center;
+    line-height: 10px;
+}

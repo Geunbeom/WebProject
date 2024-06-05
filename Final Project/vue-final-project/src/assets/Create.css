@@ -1,0 +1,104 @@
+* {
+    color: rgba(0, 0, 0, 0.705);
+}
+
+.detail {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    border-top: 1px solid rgba(0, 0, 0, 0.13);
+    padding: 10px 20px;
+    width: 80%;
+    margin: auto;
+    font-size: 25px;
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    border-radius: 5px;
+    height: 25px;
+    margin: 10px 0px 0px;
+    font-size: 15px;
+}
+
+.detail input {
+    margin: 0px 50px 5px;
+    width: 80%;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    font-size: 20px;
+}
+
+.content {
+    width: 70%;
+    margin: auto;
+    padding: 50px 70px;
+    word-break: break-all;
+    font-size: 22px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    color: rgba(0, 0, 0, 0.692);
+}
+
+.content input {
+    width: 95%;
+    height: 150px;
+    margin: 20px;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+.create-form1{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    border-radius: 20px;
+    width: 750px;
+    margin: 50px auto 0px;
+}
+
+.create-form2 {
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    margin: 50px 0px 50px 300px;
+}
+
+.create-muscle {
+    position: absolute;
+    height: 290px;
+    width: 0px;
+    margin: 0px 780px 100px 0px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: end;
+    width: 95%;
+    margin: 50px 0px;
+}
+
+.bt-regist, .bt-cancle {
+    background-color: white;
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+}
+
+.bt-regist {
+    border: 1px solid blue;
+    color: blue;
+}
+
+.bt-cancle {
+    border: 1px solid red;
+    color: red;
+}
+
+.bt-regist:hover, .bt-cancle:hover {
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+.bt-regist:active, .bt-cancle:active {
+    background-color: rgba(0, 0, 0, 0.384);
+}
