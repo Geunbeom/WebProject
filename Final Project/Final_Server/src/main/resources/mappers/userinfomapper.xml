@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <!-- 네임스페이스에 DAO 풀패키지명을 작성 -->
+<mapper namespace="com.project.model.dao.UserInfoDao">
+	<select id="getInfo" parameterType="String" resultType="UserInfo">
+		SELECT *
+		FROM user_info
+		WHERE id = #{id}
+	</select>
+	<select id="getRankList" resultType="Rank">
+		SELECT us.nick_name, ui.rate, ui.exp
+		FROM user_info ui
+		INNER JOIN users us
+		ON ui.id = us.id
+		ORDER BY exp DESC
+		LIMIT 10;
+	</select>
+	<insert id="registInfo" parameterType="UserInfo">
+		INSERT INTO user_info
+		VALUES (#{id}, 0, 0, 0, 0);
+	</insert>
+	<update id="mileageModify" parameterType="UserInfo">
+		UPDATE user_info
+		SET mileage = mileage + ${mileage}
+		WHERE id = #{id};
+	</update>
+	<update id="expModify" parameterType="UserInfo">
+		UPDATE user_info
+		SET exp = exp + ${exp}
+		WHERE id = #{id};
+	</update>
+	<update id="rateUp" parameterType="UserInfo">
+		UPDATE user_info
+		SET rate = rate + 1
+		WHERE id = #{id};
+	</update>
+	<update id="highscoreModify" parameterType="UserInfo">
+		UPDATE user_info
+		SET highscore = ${highscore}
+		WHERE id = #{id};
+	</update>
+	<select id="highscoreRank" resultType="UserInfo">
+		SELECT id, highscore
+		FROM user_info
+		WHERE highscore IS NOT NULL AND highscore > 0
+		ORDER BY highscore DESC
+		LIMIT 10;
+	</select>
+	
+</mapper>

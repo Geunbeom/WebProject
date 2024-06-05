@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.project.model.dao.RoutineBoardDao">
+  <select id="getRoutineBoardList" resultType="RoutineBoard">
+  	SELECT * FROM routineboard ORDER BY id DESC;
+  </select>
+  <insert id="createRoutineBoard" parameterType="RoutineBoard">
+  	INSERT INTO routineboard (id, routine_id, title, writer, content, view_cnt, reg_date, `like`)
+  	VALUES(0, #{routineId}, #{title}, #{writer}, #{content}, 0, date(now()), 0);
+  </insert>
+  <select id="getRoutineBoard" parameterType="int" resultType="RoutineBoard">
+  	SELECT * FROM routineboard
+  	WHERE id = #{id};
+  </select>
+  <delete id="deleteRoutineBoard" parameterType="int">
+  	DELETE FROM routineboard
+  	WHERE id = #{id};
+  </delete>
+  <update id="putRoutineBoard" parameterType="RoutineBoard">
+  	UPDATE routineboard
+  	SET title = #{title}, writer = #{writer}, content = #{content}
+  	WHERE id = #{id};
+  </update>
+  <update id="viewCntPlus" parameterType="int">
+  	UPDATE routineboard
+  	SET view_cnt = view_cnt + 1
+  	WHERE id = #{id};
+  </update>
+  <update id="upLike" parameterType="int">
+	UPDATE routineboard
+	SET `like` = `like` + 1
+	WHERE id = #{id};
+  </update>
+  <update id="downLike" parameterType="int">
+	UPDATE routineboard
+	SET `like` = `like` - 1
+	WHERE id = #{id};
+  </update>
+  <select id="search" parameterType="SearchCondition" resultType="RoutineBoard">
+	SELECT * FROM routineboard
+	<if test="key != 'none'">
+		WHERE ${key} LIKE concat('%', #{word}, '%')
+	</if>
+	<if test="orderBy != 'none'">
+		ORDER BY `${orderBy}` ${orderDir}
+	</if>
+  </select>
+</mapper>
