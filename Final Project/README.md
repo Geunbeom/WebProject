@@ -67,7 +67,7 @@
 ![detail](https://github.com/Geunbeom/WebProject/assets/160552393/e3fee263-878e-4156-bc4a-98d27bb0acb8)
 
 
-  - Attend
+  - Attend(출석 날짜 Hover시 해당 일자 반투명하게 출력)
 ![Attend](https://github.com/Geunbeom/WebProject/assets/160552393/86ece31a-eebb-4574-9ea4-3c388503181a)
 
 
