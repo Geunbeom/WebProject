@@ -17,23 +17,23 @@
 ## 👥 멤버 소개
 
 1. `김성현(Java 비전공)`
-   - Front : Main, MiniGame, Attend, Rank
-   - Back : Board, Reply, Search, MiniGame
+- Front : Main, MiniGame, Attend, Rank
+- Back : Board, Reply, Search, MiniGame
    
 </br>
 
 2. `서근범(Java 비전공)`
-   - Front : Board, Routine, Login, Like(추천), Payments API
-   - Back : User, User-info, Routine, MiniGame, Attend, Like
+- Front : Board, Routine, Login, Like(추천), Payments API
+- Back : User, User-info, Routine, MiniGame, Attend, Like
      
 </br>
 
 
 3. `공통 작업
-   - 아이디어 회의
-   - ERD, Schema 설계
-   - 화면 설계
-   - UseCase
+- 아이디어 회의
+- ERD, Schema 설계
+- 화면 설계
+- UseCase
    
 </br>
 
