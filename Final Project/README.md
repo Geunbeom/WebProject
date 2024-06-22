@@ -76,8 +76,13 @@
 
 ## ✔ Detail
 
+</br>
+
 **1. Board Detail**
-![detail](https://github.com/Geunbeom/WebProject/assets/160552393/e3fee263-878e-4156-bc4a-98d27bb0acb8)
+
+<img src="https://github.com/Geunbeom/WebProject/assets/160552393/e3fee263-878e-4156-bc4a-98d27bb0acb8" width="650px"/>
+</br>
+
   - 로그인 유저 게시글 추천 기능 (추천한 게시글만 모아 볼 수도 있다.)
   - 게시글 등록 시 루틴도 함께 등록
   - 아바타를 이용한 운동 부위 설정 가능
@@ -87,7 +92,10 @@
 </br>
 
 **2. Attend**
-![Attend](https://github.com/Geunbeom/WebProject/assets/160552393/86ece31a-eebb-4574-9ea4-3c388503181a)
+
+<img src="https://github.com/Geunbeom/WebProject/assets/160552393/385295ce-b891-433a-b026-9dcdf17ee66c" width="650px"/>
+</br>
+
   - 출석 날짜 Hover 시 불투명한 박스로 해당 일자에 등록한 루틴을 간략하게 표시 (마우스 옆에 표시)
   - 출석 날짜 클릭 시 해당 날짜에 등록한 루틴의 디테일
   - 오늘 일자부터 10일 전 까지 표시 (빈칸은 출석 안 한 일자)
@@ -99,8 +107,17 @@
 </br>
 
 **3. Mini game**
-![Minigame01](https://github.com/Geunbeom/WebProject/assets/160552393/f0630c59-4ea4-4020-acb6-52012e73dd9e)
-![MiniGame02](https://github.com/Geunbeom/Baekjoon/assets/160552393/5dbd8347-8434-4a5b-bd44-113cfebfdf15)
+
+<td>
+  <tr>
+<img src="https://github.com/Geunbeom/WebProject/assets/160552393/f0630c59-4ea4-4020-acb6-52012e73dd9e" width="450px"/>
+  </tr>
+  <tr>
+<img src="https://github.com/Geunbeom/Baekjoon/assets/160552393/5dbd8347-8434-4a5b-bd44-113cfebfdf15" width="400px"/>
+  </tr>
+</td>
+</br>
+
   - 마일리지를 소모하여 EXP 획득, 일정 경험치 누적 시 랭크 업 (랭크 이미지와 색상이 바뀐다)
   - 운동하기 : 확률형 시스템, 확률 별로 EXP 습득량이 다름
   - 프로틴먹기 : 100 % 확률로 EXP 획득 (운동하기 보다 적은 EXP)
@@ -111,7 +128,10 @@
 </br>
 
 **4. Payments**
-![Payments](https://github.com/Geunbeom/Baekjoon/assets/160552393/da7b42e0-6b05-419e-b6d1-6ae26e4b021c)
+
+<img src="https://github.com/Geunbeom/Baekjoon/assets/160552393/da7b42e0-6b05-419e-b6d1-6ae26e4b021c" width="600px"/>
+</br>
+
   - IAMPORT 기반 결제 API, Kakao 간편 결제, 실제 동작 가능(Test 결제이므로 실제 결제는 되지 않는다.)
 
 </br>
