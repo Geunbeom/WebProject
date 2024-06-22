@@ -21,7 +21,7 @@
 - Back : Board, Reply, Search, MiniGame
 
 **2. 서근범(Java 비전공)**
-- Front : Board, Routine, Login, Like(추천), Payments API
+- Front : Board, Routine, Login, Like(추천), Routine Avatar, Payments API
 - Back : User, User-info, Routine, MiniGame, Attend, Like
 
 **3. 공통 작업**
