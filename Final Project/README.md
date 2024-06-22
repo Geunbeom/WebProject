@@ -45,9 +45,9 @@
 ## 🔍 기술 스택
 
 - MySQL : DB Schema, ERD 작성
-- Vue.js : 프론트 프레임워크 이용
-- Spring Boot : REST API 개발
-- CSS : 바닐라, inline 형식 (css 기술 향상을 위해)
+- Vue.js : 프론트 프레임워크 이용, axios, components 기술
+- Spring Boot : REST API 개발, MyBatis 이용
+- CSS : Vanilla, inline 형식 (css 기술 향상을 위해)
 
 </br>
 
