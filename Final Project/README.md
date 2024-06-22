@@ -58,21 +58,24 @@
 
 ## ✔ RESTful API
 ![RestAPI01](https://github.com/Geunbeom/WebProject/assets/160552393/eafe58eb-0e27-4d2f-8fa2-0a472eb20f7d)
-![RestAPI02](https://github.com/Geunbeom/WebProject/assets/160552393/07053053-ed9e-4f9a-863a-8893696e8799)
 
 </br>
 
 ## ✔ Detail
-- Board Detail
+
+  - Board Detail
 ![detail](https://github.com/Geunbeom/WebProject/assets/160552393/e3fee263-878e-4156-bc4a-98d27bb0acb8)
 
-- Attend
+
+  - Attend
 ![Attend](https://github.com/Geunbeom/WebProject/assets/160552393/86ece31a-eebb-4574-9ea4-3c388503181a)
 
-- Mini game
+
+  - Mini game
 ![Minigame01](https://github.com/Geunbeom/WebProject/assets/160552393/f0630c59-4ea4-4020-acb6-52012e73dd9e)
 
-- Payments
+
+  - Payments
 
 </br>
 
