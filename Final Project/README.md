@@ -73,9 +73,11 @@
 
   - Mini game
 ![Minigame01](https://github.com/Geunbeom/WebProject/assets/160552393/f0630c59-4ea4-4020-acb6-52012e73dd9e)
+![MiniGame02](https://github.com/Geunbeom/Baekjoon/assets/160552393/5dbd8347-8434-4a5b-bd44-113cfebfdf15)
 
 
   - Payments
+![Payments](https://github.com/Geunbeom/Baekjoon/assets/160552393/da7b42e0-6b05-419e-b6d1-6ae26e4b021c)
 
 </br>
 
