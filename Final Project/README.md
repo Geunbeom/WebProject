@@ -76,23 +76,23 @@
 
 ## ✔ Detail
 
-  - Board Detail
+  - Board Detail : 게시글 추천, 루틴 등록 (아바타를 이용하여 운동 부위 설정 가능), 운동 루틴을 저장 가능.
 ![detail](https://github.com/Geunbeom/WebProject/assets/160552393/e3fee263-878e-4156-bc4a-98d27bb0acb8)
 
 </br>
 
-  - Attend(출석 날짜 Hover시 해당 일자 반투명하게 출력)
+  - Attend : 출석 날짜 Hover 시 간략하게 불투명한 박스로 마우스 옆에 표시, 클릭 시 디테일한 루틴 이미지, 오늘 일자부터 10일 전 까지 표시, 랭크 별로 다른 색상 표기.
 ![Attend](https://github.com/Geunbeom/WebProject/assets/160552393/86ece31a-eebb-4574-9ea4-3c388503181a)
 
 </br>
 
-  - Mini game
+  - Mini game : 확률형 시스템, 마일리지를 소모하여 EXP 획득, 경험치 누적 시 랭크 업
 ![Minigame01](https://github.com/Geunbeom/WebProject/assets/160552393/f0630c59-4ea4-4020-acb6-52012e73dd9e)
 ![MiniGame02](https://github.com/Geunbeom/Baekjoon/assets/160552393/5dbd8347-8434-4a5b-bd44-113cfebfdf15)
 
 </br>
 
-  - Payments
+  - Payments : IAMPORT 기반 결제 API, Kakao 간편 결제, 실제 동작 가능(Test 결제이므로 실제 결제는 되지 않는다.)
 ![Payments](https://github.com/Geunbeom/Baekjoon/assets/160552393/da7b42e0-6b05-419e-b6d1-6ae26e4b021c)
 
 </br>
