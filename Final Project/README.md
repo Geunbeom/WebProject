@@ -29,12 +29,12 @@
 
 </br>
 
-## 🔍 진행한 작업
+## 🔍 기술 스택
 
-- DB 스키마, ERD 작성
-- Vue.js 기반 프론트 개발
-- Spring Boot 기반 백엔드 개발
-- 바닐라 형식 css. (실력 향상을 위해)
+- MySQL : DB Schema, ERD 작성
+- Vue.js : 프론트 프레임워크 이용
+- Spring Boot : REST API 개발
+- CSS : 바닐라, inline 형식 (css 기술 향상을 위해)
 
 </br>
 
@@ -43,6 +43,39 @@
 ![Spring02](https://github.com/Geunbeom/WebProject/assets/160552393/9ee58f29-247b-4644-87a5-22a4954feadb)
 
 </br>
+
+## ✔ Schema
+![Schema01](https://github.com/Geunbeom/WebProject/assets/160552393/1e633c92-e02d-4685-8837-54a842011952)
+
+</br>
+
+## ✔ Vue
+![Vue01](https://github.com/Geunbeom/WebProject/assets/160552393/77a8d1af-069f-4128-b1a2-4f6b5d42f921)
+![Vue02](https://github.com/Geunbeom/WebProject/assets/160552393/5fbfd427-2621-42f0-a5c6-086840b8443b)
+
+
+</br>
+
+## ✔ RESTful API
+![RestAPI01](https://github.com/Geunbeom/WebProject/assets/160552393/eafe58eb-0e27-4d2f-8fa2-0a472eb20f7d)
+![RestAPI02](https://github.com/Geunbeom/WebProject/assets/160552393/07053053-ed9e-4f9a-863a-8893696e8799)
+
+</br>
+
+## ✔ Detail
+- Board Detail
+![detail](https://github.com/Geunbeom/WebProject/assets/160552393/e3fee263-878e-4156-bc4a-98d27bb0acb8)
+
+- Attend
+![Attend](https://github.com/Geunbeom/WebProject/assets/160552393/86ece31a-eebb-4574-9ea4-3c388503181a)
+
+- Mini game
+![Minigame01](https://github.com/Geunbeom/WebProject/assets/160552393/f0630c59-4ea4-4020-acb6-52012e73dd9e)
+
+- Payments
+
+</br>
+
 
 ## 📌 겪었던 어려움과 해결 과정
 
